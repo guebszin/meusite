@@ -265,3 +265,49 @@ button.dark-mode, input.dark-mode, select.dark-mode {
     margin-bottom: 10px;
   }
 }
+
+/* Estilo moderno para botões */
+button, nav a {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+button:hover, nav a:hover {
+  background-color: #005a9e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active, nav a:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão do modo escuro */
+#toggle-dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0078d7;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#toggle-dark:hover {
+  background-color: #005a9e;
+  transform: scale(1.1);
+}
