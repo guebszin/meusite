@@ -4,7 +4,7 @@ const imoveis = [
       titulo: 'Casa no Campo',
       cidade: 'Atibaia',
       preco: 350000,
-      imagem: 'https://www.cashme.com.br/blog/wp-content/uploads/2020/03/marco-12-1.jpg',
+      imagem: 'imagens/casa.jpg',
       descricao: 'Casa espaçosa no interior com quintal grande e área verde. Ideal para famílias e quem busca tranquilidade.'
     },
     {
