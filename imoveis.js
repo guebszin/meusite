@@ -4,7 +4,7 @@ const imoveis = [
       titulo: 'Casa no Campo',
       cidade: 'Atibaia',
       preco: 350000,
-      imagem: 'https://github.com/guebszin/meusite/blob/main/casa.png',
+      imagem: 'https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       descricao: 'Casa espaçosa no interior com quintal grande e área verde. Ideal para famílias e quem busca tranquilidade.'
     },
     {
