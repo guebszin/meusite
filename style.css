@@ -226,6 +226,7 @@
   
   header.dark-mode, footer.dark-mode {
     background-color: #1e1e1e;
+    color: #ffffff;
   }
 
   @media (max-width: 768px) {

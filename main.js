@@ -68,4 +68,33 @@ document.addEventListener("DOMContentLoaded", () => {
     // Aqui você insere os cards
     listaImoveis.innerHTML = "<p>Imóveis carregados com sucesso!</p>";
   }, 2000);
+
+  const toggleDarkButton = document.getElementById("toggle-dark");
+
+  // Verifica se o modo escuro está salvo no localStorage
+  if (localStorage.getItem("dark-mode") === "enabled") {
+    enableDarkMode();
+  }
+
+  toggleDarkButton.addEventListener("click", () => {
+    if (document.body.classList.contains("dark-mode")) {
+      disableDarkMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+
+  function enableDarkMode() {
+    document.body.classList.add("dark-mode");
+    document.querySelector("header").classList.add("dark-mode");
+    document.querySelector("footer").classList.add("dark-mode");
+    localStorage.setItem("dark-mode", "enabled");
+  }
+
+  function disableDarkMode() {
+    document.body.classList.remove("dark-mode");
+    document.querySelector("header").classList.remove("dark-mode");
+    document.querySelector("footer").classList.remove("dark-mode");
+    localStorage.setItem("dark-mode", "disabled");
+  }
 });
