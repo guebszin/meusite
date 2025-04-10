@@ -9,6 +9,45 @@
   <meta name="description" content="Encontre imóveis modernos e acessíveis. Busque por cidade ou faixa de preço.">
   <meta name="keywords" content="imóveis, casas, apartamentos, compra, venda, aluguel">
   <meta name="author" content="Luis Guilherme">
+  <style>
+    @media (max-width: 768px) {
+      .hero {
+        padding: 30px 10px;
+      }
+
+      .filtros {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .filtros input, .filtros select {
+        width: 100%;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    #scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 15px;
+      font-size: 1.5rem;
+      background-color: #0078d7;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #scroll-top:hover {
+      background-color: #005a9e;
+    }
+  </style>
 </head>
 <body>
 
@@ -46,5 +85,6 @@
 
   <script src="imoveis.js"></script>
   <script src="main.js"></script>
+  <button id="scroll-top" style="display: none;">⬆️</button>
 </body>
 </html>
