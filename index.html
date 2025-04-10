@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imóveis Modernos</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Imóveis Modernos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="contato.html">Contato</a>
+      <button id="toggle-dark">🌙</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Seu próximo imóvel está aqui</h2>
+    <p>Busque por cidade ou faixa de preço</p>
+
+    <div class="filtros">
+      <input type="text" id="busca-cidade" placeholder="Buscar por cidade..." />
+      <select id="faixa-preco">
+        <option value="">Todos os preços</option>
+        <option value="500000">Até R$ 500.000</option>
+        <option value="1000000">Até R$ 1.000.000</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="cards" id="lista-imoveis">
+    <!-- Cards serão inseridos por JavaScript -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Imóveis Modernos</p>
+  </footer>
+
+  <script src="imoveis.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

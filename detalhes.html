@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalhes do Imóvel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Imóveis Modernos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="contato.html">Contato</a>
+      <button id="toggle-dark">🌙</button>
+    </nav>
+  </header>
+
+  <main class="detalhes-container">
+    <div id="detalhes-imovel">
+      <!-- Conteúdo será inserido via JS -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Imóveis Modernos</p>
+  </footer>
+
+  <script src="imoveis.js"></script>
+  <script>
+    const container = document.getElementById('detalhes-imovel');
+    const id = localStorage.getItem('imovelSelecionado');
+    const imovel = imoveis.find(i => i.id == id);
+
+    if (imovel) {
+      container.innerHTML = `
+        <h2>${imovel.titulo}</h2>
+        <img src="${imovel.imagem}" alt="${imovel.titulo}" class="detalhes-img"/>
+        <p><strong>Localização:</strong> ${imovel.cidade}</p>
+        <p><strong>Preço:</strong> R$ ${imovel.preco.toLocaleString('pt-BR')}</p>
+        <p>${imovel.descricao}</p>
+        <a href="index.html" class="voltar-btn">← Voltar</a>
+      `;
+    } else {
+      container.innerHTML = '<p>Imóvel não encontrado.</p>';
+    }
+
+    // Dark mode toggle
+    document.getElementById('toggle-dark').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
