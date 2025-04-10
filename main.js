@@ -47,10 +47,25 @@ selectPreco.addEventListener('change', () => {
 });
 
 // Modo escuro
-const toggleBtn = document.getElementById('toggle-dark');
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark');
+document.getElementById("toggle-dark").addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+  document.querySelector("header").classList.toggle("dark-mode");
+  document.querySelector("footer").classList.toggle("dark-mode");
 });
 
 // Renderiza tudo ao carregar
 renderImoveis();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loading = document.getElementById("loading");
+  const listaImoveis = document.getElementById("lista-imoveis");
+
+  loading.style.display = "block";
+
+  // Simulação de carregamento de dados
+  setTimeout(() => {
+    loading.style.display = "none";
+    // Aqui você insere os cards
+    listaImoveis.innerHTML = "<p>Imóveis carregados com sucesso!</p>";
+  }, 2000);
+});

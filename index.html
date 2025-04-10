@@ -6,15 +6,18 @@
   <title>Imóveis Modernos</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Encontre imóveis modernos e acessíveis. Busque por cidade ou faixa de preço.">
+  <meta name="keywords" content="imóveis, casas, apartamentos, compra, venda, aluguel">
+  <meta name="author" content="Luis Guilherme">
 </head>
 <body>
 
   <header>
     <h1>Imóveis Modernos</h1>
     <nav>
-      <a href="index.html">Início</a>
-      <a href="contato.html">Feedback</a>
-      <button id="toggle-dark">🌙</button>
+      <a href="index.html" aria-label="Página inicial">Início</a>
+      <a href="contato.html" aria-label="Página de feedback">Feedback</a>
+      <button id="toggle-dark" aria-label="Alternar para o modo escuro">🌙</button>
     </nav>
   </header>
 
@@ -33,6 +36,7 @@
   </section>
 
   <section class="cards" id="lista-imoveis">
+    <p id="loading" style="display: none;">Carregando imóveis...</p>
     <!-- Cards serão inseridos por JavaScript -->
   </section>
 

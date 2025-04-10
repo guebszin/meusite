@@ -218,4 +218,29 @@
   body.dark footer {
     background: #1a1a1a;
   }
+
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
   
+  header.dark-mode, footer.dark-mode {
+    background-color: #1e1e1e;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .filtros {
+      flex-direction: column;
+    }
+  
+    .filtros input, .filtros select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
