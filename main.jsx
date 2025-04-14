@@ -7,9 +7,13 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-b from-black via-purple-900 to-black text-white font-sans">
       <header className="p-6 flex justify-between items-center">
         <h1 className="text-3xl font-bold text-purple-400">UtopiaHosting</h1>
-        <nav className="space-x-6">
-          <a href="planos.html" className="hover:text-purple-300">Planos</a>
-          <a href="#contato" className="hover:text-purple-300">Contato</a>
+        <nav className="flex flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0">
+          <a href="planos.html" className="hover:text-purple-300 bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-lg shadow-md transition-all">
+            Planos
+          </a>
+          <a href="#contato" className="hover:text-purple-300 bg-purple-700 hover:bg-purple-800 text-white px-4 py-2 rounded-lg shadow-md transition-all">
+            Contato
+          </a>
         </nav>
       </header>
 
