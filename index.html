@@ -1,90 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Imóveis Modernos</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Encontre imóveis modernos e acessíveis. Busque por cidade ou faixa de preço.">
-  <meta name="keywords" content="imóveis, casas, apartamentos, compra, venda, aluguel">
-  <meta name="author" content="Luis Guilherme">
-  <style>
-    @media (max-width: 768px) {
-      .hero {
-        padding: 30px 10px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UtopiaHosting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
       }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="p-6 flex justify-between items-center bg-purple-900/30">
+      <a href="index.html" class="text-purple-400 text-3xl font-bold hover:text-purple-300 transition">
+        UtopiaHost
+      </a>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-purple-300">Início</a>
+        <a href="planos.html" class="hover:text-purple-300">Planos</a>
+        <a href="#contato" class="hover:text-purple-300">Contato</a>
+      </nav>
+    </header>
 
-      .filtros {
-        flex-direction: column;
-        gap: 10px;
-      }
+    <main class="text-center py-24 px-4">
+      <h2 class="text-5xl font-extrabold mb-6 text-purple-300">Hospedagem de verdade.</h2>
+      <p class="text-xl max-w-2xl mx-auto mb-10 text-gray-300">
+        A UtopiaHost oferece infraestrutura de ponta para você hospedar servidores de Minecraft, FiveM, sites e muito mais. Alta performance, suporte especializado e segurança de verdade.
+      </p>
+      <a href="planos.html" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 text-lg rounded-2xl shadow-lg">
+        Conheça nossos planos
+      </a>
+    </main>
 
-      .filtros input, .filtros select {
-        width: 100%;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-
-    #scroll-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px 15px;
-      font-size: 1.5rem;
-      background-color: #0078d7;
-      color: #fff;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    #scroll-top:hover {
-      background-color: #005a9e;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Imóveis Modernos</h1>
-    <nav>
-      <a href="index.html" aria-label="Página inicial">Início</a>
-      <a href="contato.html" aria-label="Página de feedback">Feedback</a>
-      <button id="toggle-dark" aria-label="Alternar para o modo escuro">🌙</button>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Seu próximo imóvel está aqui</h2>
-    <p>Busque por cidade ou faixa de preço</p>
-
-    <div class="filtros">
-      <input type="text" id="busca-cidade" placeholder="Buscar por cidade..." />
-      <select id="faixa-preco">
-        <option value="">Todos os preços</option>
-        <option value="500000">Até R$ 500.000</option>
-        <option value="1000000">Até R$ 1.000.000</option>
-      </select>
-    </div>
-  </section>
-
-  <section class="cards" id="lista-imoveis">
-    <p id="loading" style="display: none;">Carregando imóveis...</p>
-    <!-- Cards serão inseridos por JavaScript -->
-  </section>
-
-  <footer>
-    <p>&copy; Luis Guilherme 2025 Imóveis</p>
-  </footer>
-
-  <script src="imoveis.js"></script>
-  <script src="main.js"></script>
-  <button id="scroll-top" style="display: none;">⬆️</button>
-</body>
+    <footer id="contato" class="bg-purple-900/20 py-10 text-center text-gray-400">
+      <p>Email: contato@utopiahost.com</p>
+      <p>© 2025 UtopiaHost - Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>

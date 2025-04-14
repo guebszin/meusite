@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planos - UtopiaHost</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <header class="p-6 flex justify-between items-center bg-purple-900/30">
+      <!-- LOGO como botão para voltar -->
+      <a href="index.html" class="text-purple-400 text-3xl font-bold hover:text-purple-300 transition">
+        UtopiaHost
+      </a>
+      <nav class="space-x-6">
+        <a href="index.html" class="hover:text-purple-300">Início</a>
+        <a href="#planos" class="hover:text-purple-300">Planos</a>
+        <a href="#contato" class="hover:text-purple-300">Contato</a>
+      </nav>
+    </header>
+
+    <main id="planos" class="py-20 px-6">
+      <h2 class="text-4xl font-bold text-center text-purple-300 mb-12">Nossos Planos</h2>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Plano 1 -->
+        <div class="bg-purple-800/30 p-6 rounded-2xl text-center shadow-lg">
+          <h3 class="text-2xl font-bold text-purple-200 mb-2">Starter</h3>
+          <p class="text-gray-300 mb-4">Ideal para projetos pequenos</p>
+          <p class="text-3xl font-extrabold text-white mb-6">R$19,90/mês</p>
+          <ul class="text-gray-400 space-y-2 mb-6">
+            <li>1 vCPU</li>
+            <li>2GB RAM</li>
+            <li>20GB SSD</li>
+          </ul>
+          <button class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-xl">
+            Contratar
+          </button>
+        </div>
+
+        <!-- Plano 2 -->
+        <div class="bg-purple-800/50 p-6 rounded-2xl text-center shadow-lg border-2 border-purple-500">
+          <h3 class="text-2xl font-bold text-purple-200 mb-2">Pro</h3>
+          <p class="text-gray-300 mb-4">Para servidores de médio porte</p>
+          <p class="text-3xl font-extrabold text-white mb-6">R$49,90/mês</p>
+          <ul class="text-gray-400 space-y-2 mb-6">
+            <li>2 vCPU</li>
+            <li>4GB RAM</li>
+            <li>40GB SSD</li>
+          </ul>
+          <button class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-xl">
+            Contratar
+          </button>
+        </div>
+
+        <!-- Plano 3 -->
+        <div class="bg-purple-800/30 p-6 rounded-2xl text-center shadow-lg">
+          <h3 class="text-2xl font-bold text-purple-200 mb-2">Enterprise</h3>
+          <p class="text-gray-300 mb-4">Alta performance e escalabilidade</p>
+          <p class="text-3xl font-extrabold text-white mb-6">R$99,90/mês</p>
+          <ul class="text-gray-400 space-y-2 mb-6">
+            <li>4 vCPU</li>
+            <li>8GB RAM</li>
+            <li>100GB SSD</li>
+          </ul>
+          <button class="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-xl">
+            Contratar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contato" class="bg-purple-900/20 py-10 text-center text-gray-400">
+      <p>Email: contato@utopiahost.com</p>
+      <p>© 2025 UtopiaHost - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
